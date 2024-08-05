@@ -1,0 +1,9 @@
+Users: Quản lý thông tin người dùng.
+Products: Quản lý thông tin sản phẩm.
+Categories: Quản lý danh mục sản phẩm.
+Orders: Quản lý thông tin đơn hàng.
+OrderItems: Quản lý các sản phẩm trong đơn hàng.
+Reviews: Quản lý đánh giá sản phẩm.
+Addresses: Quản lý địa chỉ giao hàng của người dùng.
+Payment: Quản lý thông tin thanh toán (nếu cần).
+Comments: Quản lý bình luận của người dùng về sản phẩm

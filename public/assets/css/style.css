@@ -1,0 +1,38 @@
+/** file base*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+html {
+  font: 60%;
+}
+
+a {
+  text-decoration: none;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: 0.25px;
+  display: block;
+  font-style: normal;
+}
+
+h1, h2, h3, h3, h5 {
+  color: #7FA1C3;
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+/*# sourceMappingURL=style.css.map */

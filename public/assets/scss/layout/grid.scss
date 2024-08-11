@@ -5,7 +5,7 @@ $grid-columns: 12; // Số cột trong hệ thống lưới
 $gutter-width: 15px; // Khoảng cách giữa các cột
 
 // Tính toán chiều rộng cột và khoảng cách
-$column-width: (100% / $grid-columns);
+// $column-width: (100% / $grid-columns);
 $gutter: $gutter-width * 1px;
 
 // Các class cho các cột
@@ -32,11 +32,18 @@ $gutter: $gutter-width * 1px;
 {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 $gutter-width;
+    // padding: 0 $gutter-width;
+    // width: 100%;
 }
-@each $col in 1 through $grid-columns {
-  .col-#{$col} {
-    flex: 0 0 ($column-width * $col);
-    max-width: ($column-width * $col);
-  }
+.flex
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+// @each $col in 1 through $grid-columns {
+//   .col-#{$col} {
+//     flex: 0 0 ($column-width * $col);
+//     max-width: ($column-width * $col);
+//   }
+// }

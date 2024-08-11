@@ -3,17 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="30">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <title>Website bán hàng</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <div class="grid">
             <nav class="header_nav">
-                <div class="header_nav_logo"></div>
-                <div class="header_nav_menu"></div>
+                <div class="header_nav_menu_responsive">
+                    <i class="fa-solid fa-bars"></i>
+                   
+                </div>
+                <div class="header_nav_logo">
+                    <h1>  <img src="./assets/img/logo/White_Elegant_Fashion_Logo-removebg-preview.png" alt="hinh anh logo" 
+                        sizes="(max-width:600px) 100vw, (max-width:1200px) 50vw, 33vw" srcset="" title="hinh anh thuong hieu" class="header_nav_logo_img"></h1>
+                </div>
+                <div class="header_nav_menu">
+                    <ul>
+                        <li >
+                            <h2><a href="index.html" data-translate="Home"><i class="fa-solid fa-house"></i></a></h2>
+                        </li>
+                        <li><h2><a href=""data-translate="Introduce">Về chúng tôi</a></h2></li>
+                        <li class="header_nav_menu_li">
+                            <h2><a href="" data-translate="Product">Sản phẩm </a></h2>
+                            <div class="header_nav_multi-level menu">
+                                <ul>
+                                    <li>
+                                        <h4><a href="">Quần áo</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="">Giày dép</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="">Phụ kiện</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="">Nón</a></h4>
+                                    </li>
+                                    <li>
+                                        <h4><a href="">Đồ lót</a></h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><h2><a href="" data-translate="News">Tin tức</a></h2></li>
+                        <li><h2><a href="" data-translate="Contact">Liên hệ</a></h2></li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </li>
+                        <li class="menu_accout">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="choose_accout">
+                                <p>Tài khoản</p>
+                                <ul>
+                                    <li>
+                                        <a href="">Đăng nhập</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="">Đăng kí</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>                     
+                    </ul>
+                </div>
+                <div class="header_nav_menu_responsive">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </li>
+                        <!-- <li class="menu_accout">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="choose_accout">
+                                <p>Tài khoản</p>
+                                <ul>
+                                    <li>
+                                        <a href="">Đăng nhập</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                    <li>
+                                        <a href="">Đăng kí</a>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>            -->
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 </body>
+<script src="./assets//js/button/button_search_open_close.js"></script>
+<script src="./assets/js/button/button_open-cart.js"></script>
+<script src="./assets/js/button/button_open_menu_responsive.js"></script>
 </html>

@@ -1,0 +1,351 @@
+@import './grid.scss';
+
+.display
+{
+  display: flex;
+//   align-items: center;
+  justify-content: space-between;
+}
+
+.header_nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ &_logo_img
+ {
+    width: 100px;
+    object-fit: contain;
+    height: 100%;
+ }
+ &_menu ul
+ {
+    @extend .display;
+    gap: 0 20px;
+ }
+ &_menu ul li h2 a
+ {
+   font-size: 1.1rem;
+   text-transform: uppercase;
+   font-weight: bold;
+   transition: all 0.3s ease;
+ }
+ &_menu ul li h2 a:hover,
+ &_menu ul li h2 a:active
+ {
+    color: $color;
+ }
+ &_menu ul li
+ {
+   cursor: pointer;
+ }
+ &_menu_li
+ {
+   position: relative;
+ }
+ &_multi-level
+ {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    transition: all 0.6s ease;
+    // transform: translateY(60%);
+    // opacity: 0;
+ }
+ &_multi-level ul
+ {
+   display: flex;
+   align-items: start;
+   justify-content: start;
+   flex-direction: column;  
+   border: 1px solid transparent;
+   min-width: 200px;
+   gap: 15px 0;
+   padding: 10px 15px;   
+   background-color: #fafafa;
+   box-shadow: 2px 2px 4px 2px rgba($color: #000000, $alpha: 0.2);
+   border-radius: 4px;
+ }
+ &_multi-level ul li h4 a
+ {
+   font-size: 1rem;
+   display: block;
+   text-transform: uppercase;
+   border-bottom: 1px solid #dcdbdb;
+   min-width: 200px;
+   transition: all 0.3s ease;
+ }
+ &_multi-level ul li h4 a:hover,
+ &_multi-level ul li h4 a:active
+ {
+   color: $color;
+
+ }
+ &_menu_li:hover  &_multi-level
+ {
+    display: block;
+    // transform: translateY(5%);
+    // opacity: 1;
+ }
+/* Phần tử tìm kiếm cố định trên toàn màn hình với nền đen */
+&_form_search {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #000000;
+   min-height: 20%;
+   display: flex;
+   align-items: center; /* Căn giữa theo chiều dọc */
+   justify-content: center; /* Căn giữa theo chiều ngang */
+   border: 0; /* Xóa viền */
+   margin: 0; /* Loại bỏ margin mặc định */
+   z-index: 4;
+  //  display: none;
+ }
+ 
+ /* Phần tử chứa ô tìm kiếm với chiều rộng đầy đủ */
+ &_form_search_input {
+   width: 100%;
+   max-width: 600px; /* Điều chỉnh kích thước tối đa nếu cần */
+ }
+ 
+ /* Phần tử nội dung tìm kiếm */
+ &_form_search_input_flex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%; /* Chiều rộng đầy đủ */
+   height: 100%; /* Chiều cao đầy đủ của phần tử cha */
+   background-color: #ffffff; /* Nền trắng cho phần tìm kiếm */
+   border-radius: 8px; /* Bo góc cho phần tìm kiếm */
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
+   padding: 10px; /* Khoảng cách bên trong */
+ }
+ &_button_search
+ {
+    font-size: 1rem;
+    background-color: transparent;
+ }
+ &_button_search i
+ {
+    color: #ffffff;
+    font-size: 1rem;
+ }
+ &_button_search i:hover
+ {
+    color: #d3d0d0;
+    cursor: pointer;
+ }
+ &_form_buy
+ {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   min-height: 100%;
+   min-width: 500px;
+   background-color: #ffffff;
+   box-shadow: 2px 2px 4px 2px rgba($color: #000000, $alpha: 0.2);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  //  transform: translateX(-100%);
+  z-index: 4;
+ }
+ &_form_buy_flex
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px 0;
+ }
+ &_button_x p
+ {
+    text-align: end;
+    display: flex;
+    align-items: end;
+ }
+ &_form_buy_flex h3
+ {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.25px;
+ }
+ &_form_buy_flex p a
+ {
+    border: 1px solid #000000;
+    padding: 20px 40px;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+ }
+ &_form_buy_flex p a:hover,
+ &_form_buy_flex p a:active
+ {
+    transform: scale(1.04);
+    box-shadow: 2px 2px 4px 2px rgba($color: #000000, $alpha: 0.2);
+    background-color: #ffffff;
+    color: #000000;
+ }
+ &_menu_responsive
+ {
+    display: none;
+ }
+//  &_menu_accout
+//  {
+//     position: relative;
+//  }
+//  &_choose_accout
+//  {
+//     position: absolute;
+//     transform: translateX(-90%) translateY(5%);
+//     border: 1px solid transparent;
+//    //  display: flex;
+//    //  align-items: start;
+//    //  justify-content: start;
+//    //  flex-direction: column;
+//     gap: 30px 0;
+//     padding: 10px;
+//     border-radius: 4px;
+//     box-shadow: 2px 2px 4px 2px rgba($color: #000000, $alpha: 0.2);
+//     z-index: 2;
+//     display: none;
+//     transition: all 0.6s ease;
+//  }
+
+
+//  &_choose_accout p
+//  {
+//     text-transform: capitalize;
+//     font-weight: bold;
+//     font-size: 1.1rem;
+//     border-bottom:1px solid #cacaca;
+//     min-width: 200px;
+//  }
+//  &_choose_accout ul
+//  {
+//    display: flex;
+//    align-items: start;
+//    justify-content: start;
+//    flex-direction: column;
+//    min-width: 200px;
+//    gap: 15px;
+//  }
+//  &_choose_accout ul li
+//  {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//  }
+//  &_choose_accout ul li i
+//  {
+//     color: #dcdbdb;
+//  }
+//  &_choose_accout ul li a
+//  {
+//     min-width: 180px;
+//     text-transform: capitalize;
+//     border-bottom: 1px solid #cacaca;
+//     padding-bottom: 5px;
+//     transition: all 0.6s ease;
+//  }
+//  &_choose_accout ul li a:hover,
+//  &_choose_accout ul li a:active
+//  {
+//     color: #dcdbdb;
+//  }
+//  &_menu_accout:hover &_choose_accout
+//  {
+//     display: block;
+//  }
+}
+#input_search
+{
+  min-width: 400px;
+  display: inline-block;
+  border: none;
+  color: #000000;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+}
+#input_search::placeholder
+{
+  color: #d3d0d0;
+}
+.fa-magnifying-glass
+{
+  color: #000000;
+}
+button
+{
+  border: none;
+}
+.menu_accout {
+   position: relative;
+}
+
+.choose_accout {
+   position: absolute;
+   transform: translateX(-90%) translateY(5%);
+   border: 1px solid transparent;
+   gap: 30px 0;
+   padding: 10px;
+   border-radius: 4px;
+   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); /* If not using Sass */
+   z-index: 2;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.choose_accout p {
+   text-transform: capitalize;
+   font-weight: bold;
+   font-size: 1.1rem;
+   border-bottom: 1px solid #cacaca;
+   min-width: 200px;
+}
+
+.choose_accout ul {
+   display: flex;
+   align-items: start;
+   justify-content: start;
+   flex-direction: column;
+   min-width: 200px;
+   gap: 15px;
+}
+
+.choose_accout ul li {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.choose_accout ul li i {
+   color: #dcdbdb;
+}
+
+.choose_accout ul li a {
+   min-width: 180px;
+   text-transform: capitalize;
+   border-bottom: 1px solid #cacaca;
+   padding-bottom: 5px;
+   transition: color 0.6s ease;
+}
+
+.choose_accout ul li a:hover,
+.choose_accout ul li a:active {
+   color: #dcdbdb;
+}
+
+.menu_accout:hover .choose_accout {
+   opacity: 1;
+   visibility: visible;
+}

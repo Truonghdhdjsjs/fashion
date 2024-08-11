@@ -36,3 +36,95 @@ cp .env.example .env
 php artisan migrate --seed
 5. **Chạy máy chủ phát triển**
 php -S localhost:8000 -t public
+
+
+
+1. Trang Chủ
+Hình ảnh nổi bật (Banner, Slider)
+Sản phẩm mới (New Arrivals)
+Sản phẩm bán chạy (Best Sellers)
+Khuyến mãi và giảm giá (Promotions, Discounts)
+Tìm kiếm sản phẩm nổi bật (Featured Products)
+2. Danh Mục Sản Phẩm
+Sản phẩm theo loại (Product Categories)
+
+Quần Áo (Clothing)
+Áo sơ mi
+Áo thun
+Áo khoác
+Váy
+Quần
+Giày Dép (Footwear)
+Giày thể thao
+Giày công sở
+Dép
+Phụ Kiện (Accessories)
+Túi xách
+Kính mắt
+Đồ trang sức
+Nón mũ
+Đồ Lót (Lingerie)
+Áo ngực
+Quần lót
+Đồ ngủ
+Theo Thương Hiệu (Brands)
+
+Thương hiệu A
+Thương hiệu B
+Theo Phong Cách (Styles)
+
+Thời trang công sở
+Thời trang dạo phố
+Thời trang thể thao
+Thời trang mùa đông/hè
+Theo Giới Tính (Gender)
+
+Nam
+Nữ
+Trẻ em
+3. Tìm Kiếm
+Tìm kiếm sản phẩm (Search Bar)
+Bộ lọc tìm kiếm (Filters) – theo giá, kích cỡ, màu sắc, thương hiệu, v.v.
+4. Chương Trình Khuyến Mãi
+Khuyến mãi hiện tại (Current Promotions)
+Giảm giá (Discounts)
+Sản phẩm đặc biệt (Special Offers)
+Sản phẩm giảm giá (Clearance Sale)
+5. Blog hoặc Tin Tức
+Bài viết về xu hướng (Fashion Trends)
+Mẹo làm đẹp và chăm sóc (Beauty Tips)
+Tin tức và cập nhật (News and Updates)
+6. Giỏ Hàng
+Xem giỏ hàng (View Cart)
+Thanh toán (Checkout)
+Cập nhật số lượng (Update Quantity)
+Xóa sản phẩm (Remove Item)
+7. Tài Khoản
+Đăng nhập/Đăng ký (Login/Register)
+Thông tin tài khoản (Account Details)
+Lịch sử đơn hàng (Order History)
+Quản lý địa chỉ (Manage Addresses)
+Thay đổi mật khẩu (Change Password)
+8. Dịch Vụ Khách Hàng
+Chính sách đổi trả (Return Policy)
+Hướng dẫn mua hàng (Shopping Guide)
+Câu hỏi thường gặp (FAQ)
+Thông tin liên hệ (Contact Us)
+Trung tâm hỗ trợ (Help Center)
+9. Về Chúng Tôi
+Giới thiệu (About Us)
+Sứ mệnh và giá trị (Mission & Values)
+Đội ngũ (Our Team)
+Tin tức công ty (Company News)
+10. Liên Kết Xã Hội
+Mạng xã hội (Social Media Links)
+Đăng ký nhận bản tin (Newsletter Signup)
+11. Chính Sách và Quy Định
+Chính sách bảo mật (Privacy Policy)
+Điều khoản sử dụng (Terms of Service)
+Chính sách vận chuyển (Shipping Policy)
+12. Chức Năng Khác
+Danh sách yêu thích (Wishlist)
+So sánh sản phẩm (Product Comparison)
+Công cụ tìm kiếm nâng cao (Advanced Search Tools)
+https://thachpham.com/web-development/html-css/lam-giao-dien-respoonsive.html

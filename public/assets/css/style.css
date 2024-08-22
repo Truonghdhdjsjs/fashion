@@ -119,6 +119,7 @@ table {
   width: 100px;
   object-fit: contain;
   height: 100%;
+  display: block;
 }
 .header_nav_menu ul {
   gap: 0 20px;
@@ -349,6 +350,27 @@ button {
   visibility: visible;
 }
 
+.scroll {
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.scroll .header_nav_logo_img {
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.scroll nav {
+  margin: 0;
+}
+
+.scroll .header_nav_logo_img,
+.scroll ul,
+.scroll .fa-bars {
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -381,6 +403,9 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+  #header {
+    padding: 0 20px;
+  }
   .header_nav_logo_img {
     width: 80px;
     display: block;
@@ -437,8 +462,14 @@ button {
   }
 }
 @media all and (max-width: 768px) {
+  #header {
+    padding: 10px;
+  }
   .grid {
     padding: 0 20px;
+  }
+  .header_nav {
+    align-items: center;
   }
   .header_nav_menu_responsive {
     display: block;
@@ -540,10 +571,10 @@ button {
   .header_nav_menu_responsive_item ul li h2 a:hover, .header_nav_menu_responsive_item ul li h2 a:active {
     color: #dcdbdb;
   }
-}
-.active {
-  transition: all 1s ease;
-  transform: translateX(0%);
+  .active {
+    transition: all 1s ease;
+    transform: translateX(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
